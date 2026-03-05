@@ -1,10 +1,8 @@
 # Laravel Storage Explorer
 
-[![Tests](https://github.com/jakovic/laravel-storage-explorer/actions/workflows/tests.yml/badge.svg)](https://github.com/jakovic/laravel-storage-explorer/actions/workflows/tests.yml)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/jakovic/laravel-storage-explorer.svg)](https://packagist.org/packages/jakovic/laravel-storage-explorer)
-[![PHP Version](https://img.shields.io/packagist/php-v/jakovic/laravel-storage-explorer.svg)](https://packagist.org/packages/jakovic/laravel-storage-explorer)
 [![Laravel Version](https://img.shields.io/badge/laravel-10%20%7C%2011%20%7C%2012-blue.svg)](https://packagist.org/packages/jakovic/laravel-storage-explorer)
-[![License](https://img.shields.io/packagist/l/jakovic/laravel-storage-explorer.svg)](https://github.com/jakovic/laravel-storage-explorer/blob/main/LICENSE)
+[![PHP Version](https://img.shields.io/badge/php-8.1%2B-777BB4.svg)](https://packagist.org/packages/jakovic/laravel-storage-explorer)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/jakovic/laravel-storage-explorer/blob/main/LICENSE)
 
 A visual file manager for Laravel storage. Browse directories, preview files, upload, download, and delete - all from a clean, responsive UI. Built with Blade + Alpine.js, zero external dependencies.
 
