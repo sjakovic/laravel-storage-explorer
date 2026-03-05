@@ -1,0 +1,44 @@
+{
+    "name": "jakovic/laravel-storage-explorer",
+    "description": "A storage directory tree view with file management for Laravel applications.",
+    "keywords": ["laravel", "storage", "file-manager", "explorer", "file-browser"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jakovic"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/routing": "^10.0|^11.0|^12.0",
+        "illuminate/filesystem": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jakovic\\StorageExplorer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jakovic\\StorageExplorer\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jakovic\\StorageExplorer\\StorageExplorerServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
