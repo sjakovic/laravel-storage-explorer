@@ -241,4 +241,4 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Author
 
-**Simo Jakovic** - [jakovic.com](https://jakovic.com) - [GitHub](https://github.com/jakovic)
+**Simo Jaković** - [jakovic.com](https://jakovic.com) - [GitHub](https://github.com/jakovic)
