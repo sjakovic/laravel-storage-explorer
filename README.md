@@ -6,6 +6,18 @@
 
 A visual file manager for Laravel storage. Browse directories, preview files, upload, download, and delete - all from a clean, responsive UI. Built with Blade + Alpine.js, zero external dependencies.
 
+## Screenshots
+
+![Main window](screenshots/main-window.png)
+
+![Laravel log preview](screenshots/laravel-log.png)
+
+![Javascript file preview](screenshots/js-script.png)
+
+![New folder](screenshots/new-folder.png)
+
+![Javascript file preview](screenshots/upload-file.png)
+
 ## Features
 
 - **Directory tree** with lazy-loading and expand/collapse
