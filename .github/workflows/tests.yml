@@ -41,6 +41,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          composer config policy.advisories.block false
           composer require "illuminate/support:${{ matrix.laravel }}" "illuminate/routing:${{ matrix.laravel }}" "illuminate/filesystem:${{ matrix.laravel }}" --no-interaction --no-update
           composer update --prefer-dist --no-interaction
 
