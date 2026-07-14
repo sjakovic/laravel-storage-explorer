@@ -2,6 +2,7 @@
 
 namespace Jakovic\StorageExplorer\Tests\Feature;
 
+use Illuminate\Http\UploadedFile;
 use Jakovic\StorageExplorer\Tests\TestCase;
 
 class SecurityTest extends TestCase
@@ -50,7 +51,7 @@ class SecurityTest extends TestCase
 
     public function test_path_traversal_in_upload_directory(): void
     {
-        $file = \Illuminate\Http\UploadedFile::fake()->create('test.txt', 100);
+        $file = UploadedFile::fake()->create('test.txt', 100);
 
         $response = $this->postJson(route('storage-explorer.upload'), [
             'file' => $file,
@@ -86,7 +87,7 @@ class SecurityTest extends TestCase
         $extensions = ['php', 'phar', 'sh', 'exe', 'bat', 'cmd'];
 
         foreach ($extensions as $ext) {
-            $file = \Illuminate\Http\UploadedFile::fake()->create("malicious.{$ext}", 100);
+            $file = UploadedFile::fake()->create("malicious.{$ext}", 100);
 
             $response = $this->postJson(route('storage-explorer.upload'), [
                 'file' => $file,

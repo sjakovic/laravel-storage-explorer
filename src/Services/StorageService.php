@@ -2,12 +2,13 @@
 
 namespace Jakovic\StorageExplorer\Services;
 
+use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Support\Facades\Storage;
 use Jakovic\StorageExplorer\Enums\FileType;
 
 class StorageService
 {
-    protected \Illuminate\Filesystem\FilesystemAdapter $disk;
+    protected FilesystemAdapter $disk;
 
     protected string $rootPath;
 
@@ -410,7 +411,7 @@ class StorageService
         ];
     }
 
-    public function getDisk(): \Illuminate\Filesystem\FilesystemAdapter
+    public function getDisk(): FilesystemAdapter
     {
         return $this->disk;
     }
